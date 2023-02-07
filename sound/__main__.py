@@ -208,7 +208,6 @@ https://t.me/KrakinzLab
 و هذا رابط مجموعته 
 https://t.me/Krakns
     """
-        return StopPropagation
     except Exception as e:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
