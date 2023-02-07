@@ -207,16 +207,7 @@ async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
     و هذا رابط مجموعته 
     https://t.me/Krakns
 
-    """,
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("〽️ 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Krakns")],
-                [InlineKeyboardButton(
-                    "⚜️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/KrakinzLab")],
-                [InlineKeyboardButton(
-                    "𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱🎬𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫", url="https://t.me/HvYouTubeBot")],
-                [InlineKeyboardButton(
-                    "𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱⭕️𝐌𝐮𝐬𝐢𝐜⭕️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫", url="https://t.me/HvYouTubeMusicBot")],
-                [InlineKeyboardButton("𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿", url="https://t.me/HvSoundCloudBot")]]))
+    """
         return  StopPropagation
     except Exception as e:
         if HEROKU == "HEROKU":
