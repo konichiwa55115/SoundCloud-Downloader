@@ -198,23 +198,16 @@ async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
         await 𝗦𝗼𝘂𝗻𝗱.reply_photo(
             photo="https://telegra.ph/file/2752e78446fe4e63a7182.jpg",
             caption=f"""
-    一𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿一
+    السلام عليكم . أنا بوت التحميل من ساوندكلاود . فقط أرسل رابط الصوتية أو الدرس و أنا سأقوم برفعه إلى تلجرام 
+    تنبيه / ممنوع استخدام البوت لتحميل الأغاني أو الموسيقا أو الشيلات أو الأناشيد لأنها حرام 
+    لبقية البوتات هنا 
+    https://t.me/ibnAlQyyim/1120
 
-    📌I Am 𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 that can take any youtube audio 
-    link and send you its music in mere seconds.
-    📌Just send me the 𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱 audio link and wait.
-
-    ⚠️  **ONLY AUDIO! Check below button for VIDEO**
-    """,
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("〽️ 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Krakns")],
-                [InlineKeyboardButton(
-                    "⚜️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/KrakinzLab")],
-                [InlineKeyboardButton(
-                    "𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱🎬𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫", url="https://t.me/HvYouTubeBot")],
-                [InlineKeyboardButton(
-                    "𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱⭕️𝐌𝐮𝐬𝐢𝐜⭕️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫", url="https://t.me/HvYouTubeMusicBot")],
-                [InlineKeyboardButton("𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿", url="https://t.me/HvSoundCloudBot")]]))
+تم تطويره بواسطة 
+https://t.me/KrakinzLab
+و هذا رابط مجموعته 
+https://t.me/Krakns
+    """
         return StopPropagation
     except Exception as e:
         if HEROKU == "HEROKU":
@@ -340,7 +333,7 @@ async def Started(𝗦𝗼𝘂𝗻𝗱: Message):
         return
 
     Audio_Hole = HV_SoundCloud_Audio.extract_info(𝗦𝗼𝘂𝗻𝗱.text, download=False)
-    if Audio_Hole['duration'] > 600:
+    if Audio_Hole['duration'] > 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999:
         await 𝗦𝗼𝘂𝗻𝗱.reply_photo(
             photo="https://telegra.ph/file/2752e78446fe4e63a7182.jpg",
             caption=f"""
@@ -417,18 +410,7 @@ async def audio_sender(𝗦𝗼𝘂𝗻𝗱: Message, Audio_Hole, audio_file):
         parse_mode='markdown'
     )
     await 𝗦𝗼𝘂𝗻𝗱.reply_audio(
-        audio_file,
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("〽️ 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Krakns")],
-            [InlineKeyboardButton(
-                "⚜️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/KrakinzLab")],
-            [InlineKeyboardButton("𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱🎬𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫",
-                                  url="https://t.me/HvYouTubeBot")],
-            [InlineKeyboardButton(
-                "𝐘𝐨𝐮𝗦𝗼𝘂𝗻𝗱⭕️𝐌𝐮𝐬𝐢𝐜⭕️𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫", url="https://t.me/HvYouTubeMusicBot")],
-            [InlineKeyboardButton("𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿", url="https://t.me/HvSoundCloudBot")]]),
-        caption=f"""
-一𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿一
+        audio_file
 
 🏷**ᴛɪᴛʟᴇ:**  __**{title}**__
 🎬**ꜱɪᴛᴇ:**  [𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱](https://youtube.com)
