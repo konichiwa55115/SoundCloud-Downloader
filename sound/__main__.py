@@ -207,7 +207,7 @@ async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
 https://t.me/KrakinzLab
 و هذا رابط مجموعته 
 https://t.me/Krakns
-    """
+    """,
     except Exception as e:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
