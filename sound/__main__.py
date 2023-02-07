@@ -419,7 +419,8 @@ async def audio_sender(𝗦𝗼𝘂𝗻𝗱: Message, Audio_Hole, audio_file):
         parse_mode='markdown'
     )
     await 𝗦𝗼𝘂𝗻𝗱.reply_audio(
-        audio_file
+        audio_file,
+         caption=f"""
 
 🏷**ᴛɪᴛʟᴇ:**  __**{title}**__
 🎬**ꜱɪᴛᴇ:**  [𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱](https://youtube.com)
