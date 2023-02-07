@@ -195,9 +195,9 @@ has been licensed under GNU General Public License                              
 async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
     try:
         await 𝗦𝗼𝘂𝗻𝗱.delete()
-        await 𝗦𝗼𝘂𝗻𝗱.reply_photo(
-            photo="https://telegra.ph/file/2752e78446fe4e63a7182.jpg",
-            caption=f"""
+        await 𝗦𝗼𝘂𝗻𝗱.reply_text(
+            
+            text=f"""
     السلام عليكم . أنا بوت التحميل من ساوندكلاود . فقط أرسل رابط الصوتية أو الدرس و أنا سأقوم برفعه إلى تلجرام 
     تنبيه / ممنوع استخدام البوت لتحميل الأغاني أو الموسيقا أو الشيلات أو الأناشيد لأنها حرام 
     لبقية البوتات هنا 
@@ -208,7 +208,7 @@ async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
     https://t.me/Krakns
 
     """
-        return 
+        return  StopPropagation
     except Exception as e:
         if HEROKU == "HEROKU":
             LOGS.info(str(e))
