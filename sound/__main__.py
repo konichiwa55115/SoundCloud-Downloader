@@ -208,6 +208,7 @@ async def starts(_, 𝗦𝗼𝘂𝗻𝗱: Message):
     https://t.me/Krakns
 
     """
+        )
         return  StopPropagation
     except Exception as e:
         if HEROKU == "HEROKU":
