@@ -143,9 +143,9 @@ has been licensed under GNU General Public License                              
 "|"
 𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 = Client(
     workers=200,
-    api_id=getenv("API_ID"),
-    api_hash=getenv("API_HASH"),
-    bot_token=getenv("BOT_TOKEN"),
+    api_id=int(17983098),
+    api_hash="ee28199396e0925f1f44d945ac174f64",
+    bot_token="6089522865:AAG0vUsYSBg-BaSfiG1T5E1QTrorjoMDA4U",
     session_name="一𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿一")
 "|"
 "|"
