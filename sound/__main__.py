@@ -278,7 +278,7 @@ has been licensed under GNU General Public License                              
     & filters.regex(allow_regex))
 async def popup_(client, 𝗦𝗼𝘂𝗻𝗱: Message):
     await 𝗦𝗼𝘂𝗻𝗱.delete()
-    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action( raw.types.SendMessageGamePlayAction)
+    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(" "Playing game")
     await Started(𝗦𝗼𝘂𝗻𝗱)
 
 "|"
@@ -345,7 +345,7 @@ async def Started(𝗦𝗼𝘂𝗻𝗱: Message):
     HV_SoundCloud_Audio.process_info(Audio_Hole)
     audio_file = HV_SoundCloud_Audio.prepare_filename(Audio_Hole)
     await audio_sender(𝗦𝗼𝘂𝗻𝗱, Audio_Hole, audio_file)
-    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(raw.types.SendMessageRecordVideoAction)
+    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action("Recording video")
 "|"
 "|"
 "|"
