@@ -278,7 +278,7 @@ has been licensed under GNU General Public License                              
     & filters.regex(allow_regex))
 async def popup_(client, 𝗦𝗼𝘂𝗻𝗱: Message):
     await 𝗦𝗼𝘂𝗻𝗱.delete()
-    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action("playing")
+    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action( raw.types.SendMessageGamePlayAction)
     await Started(𝗦𝗼𝘂𝗻𝗱)
 
 "|"
