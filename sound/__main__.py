@@ -237,7 +237,6 @@ has been licensed under GNU General Public License                              
 
 @𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫.on_message(
     filters.incoming
-    & ~filters.edited
     & filters.regex(do_not_allow_regex))
 async def just_deny_that(_, 𝗦𝗼𝘂𝗻𝗱: Message):
     try:
@@ -276,7 +275,6 @@ has been licensed under GNU General Public License                              
 
 @𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫.on_message(
     filters.incoming
-    & ~filters.edited
     & filters.regex(allow_regex))
 async def popup_(client, 𝗦𝗼𝘂𝗻𝗱: Message):
     await 𝗦𝗼𝘂𝗻𝗱.delete()
