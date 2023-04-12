@@ -22,6 +22,7 @@ from PIL import Image
 from loguru import *
 import youtube_dl
 import asyncio
+from pyrogram import enums
 import logging
 import ffmpeg
 import shutil
@@ -278,7 +279,7 @@ has been licensed under GNU General Public License                              
     & filters.regex(allow_regex))
 async def popup_(client, 𝗦𝗼𝘂𝗻𝗱: Message):
     await 𝗦𝗼𝘂𝗻𝗱.delete()
-    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(PLAYING)
+    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(enums.ChatAction.PLAYING)
     await Started(𝗦𝗼𝘂𝗻𝗱)
 
 "|"
@@ -345,7 +346,7 @@ async def Started(𝗦𝗼𝘂𝗻𝗱: Message):
     HV_SoundCloud_Audio.process_info(Audio_Hole)
     audio_file = HV_SoundCloud_Audio.prepare_filename(Audio_Hole)
     await audio_sender(𝗦𝗼𝘂𝗻𝗱, Audio_Hole, audio_file)
-    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(RECORD_VIDEO)
+    await 𝗦𝗼𝘂𝗻𝗱.reply_chat_action(enums.ChatAction.PLAYING)
 "|"
 "|"
 "|"
