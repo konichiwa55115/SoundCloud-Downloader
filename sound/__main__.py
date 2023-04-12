@@ -407,7 +407,7 @@ async def audio_sender(𝗦𝗼𝘂𝗻𝗱: Message, Audio_Hole, audio_file):
 
 一𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿一
 """,
-        parse_mode='markdown'
+        parse_mode=enums.ParseMode.MARKDOWN
     )
     await 𝗦𝗼𝘂𝗻𝗱.reply_audio(
         audio_file,
