@@ -146,7 +146,7 @@ has been licensed under GNU General Public License                              
     workers=200,
     api_id=int(17983098),
     api_hash="ee28199396e0925f1f44d945ac174f64",
-    bot_token="6089522865:AAG0vUsYSBg-BaSfiG1T5E1QTrorjoMDA4U",
+    bot_token="5714654934:AAFm0UBvzuU1X-Adg7QThWCzpoKBww9SNXE",
     name="一𝗦𝗼𝘂𝗻𝗱𝗖𝗹𝗼𝘂𝗱🟠𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿一")
 "|"
 "|"
